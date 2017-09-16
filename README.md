@@ -27,17 +27,6 @@ $ sudo apt-get install maven
 $ sudo apt-get install mysql-server
 
 ```
-### if you are not login as root user, add a new user to mysql
-```
-$ sudo mysql -u root
-
-# add new user
-mysql> create user 'new_user'@'localhost'; 
-
-# grant user all access to the database
-mysql> grant all privileges on * . * to 'new_user'@'localhost';
-
-```
 
 ### how to populate database
 ```
