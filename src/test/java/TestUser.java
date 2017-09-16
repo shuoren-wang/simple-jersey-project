@@ -1,14 +1,16 @@
-import static com.jayway.restassured.RestAssured.given;
-import static org.junit.Assert.fail;
-
 import application.Application;
 import com.jayway.restassured.response.Response;
-
 import org.glassfish.grizzly.http.server.HttpServer;
 import org.glassfish.grizzly.http.util.HttpStatus;
-import org.junit.*;
+import org.junit.AfterClass;
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
 import java.io.IOException;
+
+import static com.jayway.restassured.RestAssured.given;
+import static org.junit.Assert.fail;
 
 public class TestUser {
     private static HttpServer testServer;
@@ -67,9 +69,9 @@ public class TestUser {
         String url = Application.BASE_URL + "/user/" + id + "/info";
 
         given().
-            when().
-        get(url).
-            then().
-        assertThat().statusCode(HttpStatus.NO_CONTENT_204.getStatusCode());
+        when().
+            get(url).
+        then().
+            assertThat().statusCode(HttpStatus.NO_CONTENT_204.getStatusCode());
     }
 }

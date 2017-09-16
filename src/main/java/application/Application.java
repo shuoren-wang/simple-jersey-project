@@ -10,6 +10,7 @@ import org.glassfish.jersey.server.ResourceConfig;
 
 import resource.UserResource;
 
+import java.io.IOException;
 import java.net.URI;
 
 
@@ -21,7 +22,7 @@ public class Application {
     }
 
 
-    public static HttpServer startServer() throws Exception {
+    public static HttpServer startServer() throws IOException {
 
         ResourceConfig resourceConfig = new ResourceConfig()
                 .register(UserResource.class)

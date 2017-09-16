@@ -49,6 +49,6 @@ $ mvn clean package
 ### How to run the project
 ```
 # go to project directory
-java -jar target/simple-jersey-project.jar
+$ java -jar target/simple-jersey-project.jar
 
 ```

@@ -12,6 +12,8 @@ public class DbUtil {
     private final static String PASSWORD = null;
     private final static String DATASOURCE_DRIVER = "com.mysql.cj.jdbc.Driver";
 
+    private DbUtil(){}
+
     public static Connection getConnection() throws SQLException {
         return getDataSource().getConnection();
     }
