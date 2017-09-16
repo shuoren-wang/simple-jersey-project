@@ -1,5 +1,5 @@
 # Description
-A sample backend project uses Jersey 
+A simple backend project uses Jersey 
 
 Endpoint:
 http://127.0.0.1:1234/user/{user_id}/info
@@ -15,7 +15,7 @@ $ curl http://127.0.0.1:1234/user/1/info
 - mysql
 
 
-# Setup
+# Setup (on ubuntu 16.04)
 
 ### install maven
 ```
@@ -41,9 +41,9 @@ mysql> grant all privileges on * . * to 'new_user'@'localhost';
 
 ### how to populate database
 ```
-- Replace all 'new_user' to your user name (in populateg.sh and database.DbUtil)
+( Replace all 'new_user' to your database user name in populate.sh and DbUtil.java)
 
-- Go to project directory and run
+- Go to project directory
 $ ./populate.sh
 ```
 
