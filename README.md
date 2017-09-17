@@ -25,7 +25,6 @@ $ sudo apt-get install maven
 ### install mysql
 ```
 $ sudo apt-get install mysql-server
-
 ```
 
 ### how to populate database
@@ -35,10 +34,6 @@ $ sudo apt-get install mysql-server
 - Go to project directory
 $ ./populate.sh
 ```
-
-
-# Build instructions:
-
 
 ### How to build:
 
