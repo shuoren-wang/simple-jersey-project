@@ -17,24 +17,18 @@ public class TestUser {
 
     @BeforeClass
     public static void setup() throws Exception {
-        System.out.println("Starting server to run tests...");
-
         testServer = Application.startServer();
 
         try {
             testServer.start();
         } catch (IOException e){
-            System.out.println("Failed to start server for tests.");
             Assert.fail();
         }
-
-        System.out.println("Server started.");
     }
 
 
     @AfterClass
     public static void tearDown(){
-        System.out.println("Stopping server . . .");
         testServer.shutdownNow();
     }
 
